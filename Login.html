@@ -162,45 +162,45 @@
       </div>
     </nav>
     <div
-      class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5"
+      class="bg-image d-flex justify-content-between ms-5 align-items-center"
+      style="
+        background-image: url('images/front-bg.jpg');
+        background-position: top;
+        background-size: cover;
+        height: 100vh;
+      "
     >
-      <div>
-        <img
-          src="images/front-bg.jpg"
-          class="bg-image image-fluid position-relative"
-          style="background-image: cover bottom; height: 100vh"
-          alt=""
+      <form
+        action="/profile.html"
+        class="bg-white shadow rounded bgPosition p-3 input-group-lg"
+      >
+        <input
+          type="email"
+          class="form-control my-3"
+          required
+          placeholder="Email address or phone number"
         />
-      </div>
-      <div class="col- position-absolute top-20 start-20">
-        <div class="bg-white shadow rounded p-3 input-group-lg">
-          <input
-            type="email"
-            class="form-control my-3"
-            placeholder="Email address or phone number"
-          />
-          <input
-            type="password"
-            class="form-control my-3"
-            placeholder="password"
-          />
-          <a href="#"
-            ><button class="btn btn-primary w-100 my-3">Log In</button></a
+        <input
+          type="password"
+          class="form-control my-3"
+          required
+          placeholder="password"
+        />
+        <button class="btn btn-primary w-100 my-3">Log In</button>
+        <a href="#" class="text-decoration-none text-center"
+          ><p>Forgotten password?</p></a
+        >
+        <hr />
+        <div class="text-center my-4">
+          <a href="#">
+            <button class="btn btn-success btn-lg">
+              Create New Account
+            </button></a
           >
-          <a href="#" class="text-decoration-none text-center"
-            ><p>Forgotten password?</p></a
-          >
-          <hr />
-          <div class="text-center my-4">
-            <a href="#">
-              <button class="btn btn-success btn-lg">
-                Create New Account
-              </button></a
-            >
-          </div>
         </div>
-      </div>
+      </form>
     </div>
+
     <script
       type="module"
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
